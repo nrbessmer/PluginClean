@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environment - never commit this
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Tool output - removal logs contain your local file paths
+plugin-removal-*.txt
+
+# Build artifacts
+build/
+dist/
+*.spec
