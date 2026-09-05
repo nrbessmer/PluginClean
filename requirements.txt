@@ -1,0 +1,21 @@
+# au_plugin_cleanup.py — runtime dependencies
+#
+# Install:  pip install -r requirements.txt
+#
+# Send2Trash moves files to the macOS Trash through Foundation's
+# NSFileManager. That matters for two reasons: it does not trigger the
+# Automation -> Finder permission prompt, and it is not fooled by quotes
+# or backslashes in a path the way an AppleScript string is.
+# The app falls back to Finder/AppleScript only for paths Send2Trash
+# cannot touch without elevation (anything under /Library).
+Send2Trash==2.1.0
+
+# NOTE: Tkinter is NOT installable with pip. It ships with your Python
+# build. If "import tkinter" fails, see SETUP.md — the fix is Homebrew or
+# a python.org installer.
+
+
+# ---------------------------------------------------------------------
+# Optional extras — install separately, not needed to run the app:
+#   pip install -r requirements-dev.txt
+# ---------------------------------------------------------------------

@@ -1,0 +1,7 @@
+# Optional tooling. Not needed to run au_plugin_cleanup.py.
+#   pip install -r requirements-dev.txt
+
+-r requirements.txt
+
+ruff>=0.6           # linting
+pyinstaller>=6.10   # bundle into a double-clickable .app
